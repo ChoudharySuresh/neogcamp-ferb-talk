@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Rubik+Iso&family=Tilt+Prism&display=swap');
+body{
+    margin: 0;
+}
+
+:root{
+    --primary-color:#a78bfa;
+    --secondary-color : #7c3aed;
+    --white:#ffff;
+}
+
+.container{
+    padding: 2rem 0;
+}
+.container-center{
+    max-width: 700px;
+    margin: auto;
+}
+
+.title{
+    font-family: 'Rubik Iso', cursive;
+    display:block;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.header{
+    background-color: var(--primary-color);
+    height: 100px;
+
+    padding-bottom: 1rem;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% calc(100% - 1rem),
+        0 100%
+    );
+}
+
+
+textarea{
+    font-size: 25px;
+    display: block;
+    width: 350px;
+    max-width: 95%;
+    margin: auto;
+    padding: 1.5rem;
+}
+
+#btn{
+    display: block;
+    padding: 0.5rem;
+    margin: auto;
+    width: 10rem;
+    font-size: 25px;
+    background-color: var(--secondary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.output{
+    margin-left: 2rem;
+    border: 2px solid var(--primary-color);
+    width: 25rem;
+    padding-left: 1rem;
+    height: 1.5rem;
+    margin: auto;
+    font-size: 25px;
+    overflow: scroll;
+}
